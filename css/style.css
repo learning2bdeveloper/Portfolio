@@ -8746,6 +8746,7 @@ h1, h2, h3, h4, h5,
   .project-content h3 {
       font-size: 1.5rem;
       margin-bottom: 10px;
+      color: rgb(255, 189, 57);
   }
   
   .project-content p {
