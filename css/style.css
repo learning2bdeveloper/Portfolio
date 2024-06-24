@@ -8368,7 +8368,7 @@ h1, h2, h3, h4, h5,
   font-size: 24px;
   text-transform: uppercase; }
 
-/* Custom styles for the section */
+/* Base styles for the hero section */
 #home-section {
   background-color: #000000; /* Background color */
   color: #ffffff; /* Text color */
@@ -8376,10 +8376,12 @@ h1, h2, h3, h4, h5,
   margin-top: 80px; /* Ensure space from navbar */
 }
 
+/* Text styles for the hero section */
 .hero .text {
   color: #ffffff; /* Text color */
 }
 
+/* Subheading styles */
 .hero .subheading {
   font-size: 14px;
   font-weight: bold;
@@ -8388,6 +8390,7 @@ h1, h2, h3, h4, h5,
   color: #ffbd39; /* Subheading color */
 }
 
+/* Main heading styles */
 .hero h1 {
   font-size: 48px;
   font-weight: 700;
@@ -8395,61 +8398,79 @@ h1, h2, h3, h4, h5,
   color: #ffffff; /* Heading color */
 }
 
+/* Subheading styles */
 .hero h2 {
   font-size: 24px;
   font-weight: 400;
   color: #ffffff; /* Subheading color */
 }
 
-.hero p {
-  margin-top: 20px;
-}
-
+/* Button styles */
 .hero .btn-primary {
   background-color: #ffbd39; /* Primary button background color */
   border-color: #ffbd39; /* Primary button border color */
 }
 
+/* Button hover styles */
 .hero .btn-primary:hover {
   background-color: #ffffff; /* Hover background color */
   color: #000000; /* Hover text color */
 }
 
+/* Outline button text color */
 .hero .btn-outline-white {
   color: #ffffff; /* Outline button text color */
   border-color: #ffffff; /* Outline button border color */
 }
 
+/* Outline button hover styles */
 .hero .btn-outline-white:hover {
   background-color: #ffbd39; /* Hover background color */
   color: #000000; /* Hover text color */
 }
 
+/* Media query for smaller screens */
 @media (max-width: 768px) {
+  /* Center align text on smaller screens */
   .hero .one-forth {
-    text-align: center; /* Center align on smaller screens */
+    text-align: center;
   }
 
-  .hero .subheading {
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffbd39; /* Subheading color */
-  }
-
-  .hero .btn-outline-white {
-    color: #ffffff; /* Outline button text color */
-    border-color: #ffffff; /* Outline button border color */
-  }
-
+  /* Adjust spacing between columns */
   .hero .col-md-6 {
-    margin-top: 30px; /* Adjust spacing between columns */
+    margin-top: 30px;
   }
 
+  /* Adjust padding for smaller screens */
   #home-section {
-    padding-top: 80px; /* Adjust padding for smaller screens */
+    padding-top: 80px;
+  }
+
+  /* Ensure consistent background color */
+  #home-section {
+    background-color: #000000;
+  }
+
+  /* Ensure consistent text color */
+  .hero .text {
+    color: #ffffff;
+  }
+
+  /* Ensure consistent button colors */
+  .hero .btn-primary,
+  .hero .btn-outline-white {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  /* Ensure consistent hover colors for buttons */
+  .hero .btn-primary:hover,
+  .hero .btn-outline-white:hover {
+    background-color: #ffbd39;
+    color: #000000;
   }
 }
+
 
 .bg-light {
   background: #f8f9fa !important; }
